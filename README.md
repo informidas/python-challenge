@@ -1,2 +1,3 @@
 # python-challenge
-Repository created to complete PyBank and PyPoll
+Repository created to complete PyBank and PyPoll Challenges
+
