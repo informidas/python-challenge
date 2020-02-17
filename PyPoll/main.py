@@ -6,31 +6,18 @@ csvpath = os.path.join('data', 'election_data.csv')
 
 # declare some variables
 khan_total = 0
+khan_percentage = 0.000
 correy_total = 0
+correy_percentage = 0.000
 li_total = 0
+li_percentage = 0.000
 otooley_total = 0
+otooley_percentage = 0.000
 total_votes = 0
 
 # define array structures needed
 voting = []
-election = [{
-  "candidate":"Li",
-  "Votes": 0
-},
-{
-  "candidate":"Khan",
-  "Votes": 0
-},
-{
-  "candidate":"Correy",
-  "Votes": 0
-},
-{
-  "candidate":"O'Tooley",
-  "Votes": 0
-}
 
-]
 
 #print(f"{election}")
 
@@ -38,7 +25,6 @@ with open(csvpath, newline='') as csvfile:
   csvreader = csv.reader(csvfile, delimiter=',')
 
   csv_header = next(csvreader)
-  print(f"CSV Header: {csv_header}")
 
   # Read each row of data after the header
   for row in csvreader:
@@ -61,17 +47,40 @@ for i in range(len(voting)):
     otooley_total += 1
 
 
-#print(voting[0][2])
-#print(voting[5][2])
-#print(voting[1][2]) 
-#print(voting[46][2]) 
 
+# write the results to a dictionary array
+candidate_totals = [correy_total, otooley_total, khan_total, li_total]
+
+#sort the list
+sorted_list = sorted(candidate_totals, reverse=True)
+
+# get the percentages for each candidate
+correy_percentage = format(((correy_total/total_votes) * 100), '.3f')
+khan_percentage = format(((khan_total/total_votes) * 100), '.3f')
+otooley_percentage = format(((otooley_total/total_votes) * 100), '.3f')
+li_percentage = format(((li_total/total_votes) * 100.000), '.3f')
+
+
+print(sorted_list)
 
 print("Election Results")
 print("--" * 20)
 print(f"Total Votes: {total_votes}")
 print("--" * 20)
-print(f"Khan total is: {khan_total}")
-print(f"O'Tooley total is: {otooley_total}")
-print(f"Li total is: {li_total}")
-print(f"Correy total is: {correy_total}")
+
+for s in sorted_list:
+  if s == correy_total:
+    print(f"Correy:  {correy_percentage}% ({correy_total})")
+  
+  elif s == otooley_total:
+    print(f"O'Tooley: {otooley_percentage}% ({otooley_total})")
+
+  elif s == khan_total:
+    print(f"Khan: {khan_percentage}% ({khan_total})")
+
+  elif s == li_total:
+    print(f"Li: {li_percentage}% ({li_total})")
+
+
+
+
