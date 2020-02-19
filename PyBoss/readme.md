@@ -1,7 +1,6 @@
 ![A boss knuckle image](boss.jpg)
 # PyBoss HR Solution
 
-## Overview
 The included script provides a solution to ingest a csv file into a list array structure and process the file to generate cahnges to the structure of the data. <br/><br/>
 
 In summary, the required conversions to the csv input file are as follows: <br/>
@@ -15,11 +14,10 @@ In summary, the required conversions to the csv input file are as follows: <br/>
 * The State data should be re-written as simple two-letter abbreviations.
 
 ## Approach
---
 ### General
 My approach to developing a solution was to create some utility functions that could perform each of the requisite data transformations. This allows us to bring in the source csv in its original format and apply the transformations on the output csv file generated as a last step in the code.<br/>
 
-*** Modules and Libraries used
+### Modules and Libraries used
 In addition to using the base python modules and libraries, I imported the **os** and **csv** modules to resolve building a file path in a platform independent manner as well as reading and processing the source csv file.<br/>
 
 ### Pseudo Code
