@@ -3,11 +3,14 @@ import os, csv
 
 budget = []
 deltas = []
+# total_pnl = 0
+# avg_pnl_change = 0.0
 total_months = 0
 profit_loss = 0
 average_change  = 0.00
 greatest_increase = 0
 greatest_decrease = 0
+
 
 
 # set path for source file
