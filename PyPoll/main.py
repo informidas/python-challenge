@@ -1,5 +1,4 @@
-import os
-import csv
+import os, csv
 
 # define path to data source file
 csvpath = os.path.join('data', 'election_data.csv')
@@ -19,35 +18,30 @@ winner = "Not Declared"
 # define array structures needed
 voting = []
 
-
-#print(f"{election}")
-
 with open(csvpath, newline='') as csvfile:
   csvreader = csv.reader(csvfile, delimiter=',')
+  
+  # skip header row in file
+  next(csvreader)
 
-  csv_header = next(csvreader)
-
-  # Read each row of data after the header
+  # Read and append each row of data after the header
   for row in csvreader:
-      voting.append(row)
 
-# get the total number of votes
-total_votes = len(voting)
-
-for i in range(len(voting)):
-  if voting[i][2] == "Khan":
-    khan_total += 1
-
-  elif voting[i][2] == "Correy":
-    correy_total += 1
+    # counter to get the overall votes
+    total_votes += 1
     
-  elif voting[i][2] == "Li":
-    li_total += 1
+    #identify which candidate received vote associated with this record
+    if row[2] == "Khan":
+      khan_total += 1
 
-  elif voting[i][2] == "O'Tooley":
-    otooley_total += 1
+    elif row[2] == "Correy":
+      correy_total += 1
+    
+    elif row[2] == "Li":
+      li_total += 1
 
-
+    elif row[2] == "O'Tooley":
+      otooley_total += 1
 
 # write the results to a dictionary array
 candidate_totals = [correy_total, otooley_total, khan_total, li_total]
@@ -60,7 +54,6 @@ correy_percentage = format(((correy_total/total_votes) * 100), '.3f')
 khan_percentage = format(((khan_total/total_votes) * 100), '.3f')
 otooley_percentage = format(((otooley_total/total_votes) * 100), '.3f')
 li_percentage = format(((li_total/total_votes) * 100.000), '.3f')
-
 
 # open a new text file with "write" mode to write Election Results.
 file = open("results\\election_results.txt", "w")
@@ -110,7 +103,7 @@ elif li_total == sorted_list[0]:
   winner = "Li"
 
 print("-" * 30 )
-print(f"Winner: {winner}\n")
+print(f"\nWinner: {winner}\n")
 file.write(f"\nWinner: {winner}\n")
 print("-" * 30 )
 file.write("-" * 30 )
