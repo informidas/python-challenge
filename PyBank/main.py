@@ -37,7 +37,7 @@ def calculate_average_delta():
   return avg_delta
 
 # function to return the month / period associated with a given variance
-# this functions is used to return both the month for the greatest increase as well as greatest decrease 
+# function used to return both the greatest increase and decrease 
 def find_month_variance(variance): 
   for m in range(0, len(deltas)): 
     if deltas[m] == int(variance): 
