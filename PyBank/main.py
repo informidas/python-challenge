@@ -48,7 +48,7 @@ def find_month_variance(variance):
 total_months = len(budget)
 average_change  = calculate_average_delta()
 greatest_increase = max(deltas)
-greatest_increase_month = find_month_variance(int(greatest_increase))
+greatest_increase_month = find_month_variance(greatest_increase)
 greatest_decrease = min(deltas)
 greatest_decrease_month = find_month_variance(greatest_decrease)
 
