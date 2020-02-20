@@ -46,4 +46,4 @@ In addition to using the base python modules and libraries, I imported the **os*
 
 ## Results
 
-![alt text](results.png "Language Statistics-Results")
+![alt text](results.PNG "Language Statistics-Results")
