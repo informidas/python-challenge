@@ -36,3 +36,7 @@ In addition to using the base python modules and libraries, I imported the **os*
 * use the regular expressions module to tokenize the paragraph into an array of words
 * create and set variables needed for stats in results summary
 * Print Results
+
+## Results
+
+![alt text](results.png "Language Statistics-Results")
