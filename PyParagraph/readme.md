@@ -44,6 +44,6 @@ In addition to using the base python modules and libraries, I imported the **os*
 *Average Letter Count*: **4.76** <br/>
 *Average Sentence Count*: **14.0** <br/>
 
-## Results
+## Sample File
 
 ![alt text](results.PNG "Language Statistics-Results")
