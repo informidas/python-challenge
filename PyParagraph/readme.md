@@ -37,6 +37,13 @@ In addition to using the base python modules and libraries, I imported the **os*
 * create and set variables needed for stats in results summary
 * Print Results
 
+### Paragraph Results 
+---------
+*Approximate Word Count*: **98** <br/>
+*Approximate Sentence Count*: **7** <br/>
+*Average Letter Count*: **4.76** <br/>
+*Average Sentence Count*: **14.0** <br/>
+
 ## Results
 
 ![alt text](results.png "Language Statistics-Results")

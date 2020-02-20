@@ -58,7 +58,7 @@ avg_letter_count = format((letter_count / len(tokenized_paragraph)),".2f")
 avg_sentence_len = format(sum(sentence_len) / len(sentence_len), ".1f")
 
 # Print Results
-print("Paragrah Analysis")
+print("Paragraph Analysis")
 print("--" * 9)
 print(f"Approximate Word Count: {approx_word_count}")
 print(f"Approximate Sentence Count: {approx_sentence_count}")
