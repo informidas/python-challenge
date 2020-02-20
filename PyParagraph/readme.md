@@ -1,4 +1,4 @@
-![A boss knuckle image](boss.jpg)
+![linguist master](language.png)
 # PyParagraph Solution
 
 The included script provides a solution to ingest a .txt file into a string variable and process the file to analyze key meta data about the document. <br/><br/>
