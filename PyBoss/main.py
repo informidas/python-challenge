@@ -1,7 +1,10 @@
-# The included script provides a solution to ingest a csv file into a list array structure and process the file 
-# to generate changes to the structure of the data.
-
-
+#####################################################################################################
+# The included script provides a solution to ingest a csv file into a list array structure and 
+# process the file to generate changes to the structure of the data.
+# Name: K. Ramsay
+# Created: 2/3/2020
+# Updated: 5/4/2020
+#####################################################################################################
 
 # import packages
 import os, csv, datetime
