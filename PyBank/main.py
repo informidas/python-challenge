@@ -1,3 +1,11 @@
+#####################################################################################################
+# The included python script provides a coding solution to analyze a Bank's Profit and Loss position 
+# on a month over month basis.
+# Name: K. Ramsay
+# Created: 
+# Updated: 
+#####################################################################################################
+
 # import modules
 import os, csv
 
