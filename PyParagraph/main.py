@@ -1,9 +1,10 @@
-###########################################################################
-# 
+###############################################################################
+# The included script provides a solution to ingest a .txt file into a string 
+# variable and process the file to analyze key meta data about the document.
 # Name: Karl Ramsay
 # Created: 2/4/2020
 # Updated: 5/4/2020
-###########################################################################
+###############################################################################
 
 # import modules
 import os, csv, re
