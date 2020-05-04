@@ -1,6 +1,7 @@
 #####################################################################################################
-# The included python script provides a coding solution to analyze a Bank's Profit and Loss position 
-# on a month over month basis.
+# The included python script provides a coding solution to analyze the results of an election. 
+# Voters cast votes for one of four candidates. The script provides a mechanism to determine the 
+# winner whom received the most votes of all teh candidates.
 # Name: K. Ramsay
 # Created: 2/3/2020
 # Updated: 5/4/2020
