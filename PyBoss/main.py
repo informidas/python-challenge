@@ -1,3 +1,8 @@
+# The included script provides a solution to ingest a csv file into a list array structure and process the file 
+# to generate changes to the structure of the data.
+
+
+
 # import packages
 import os, csv, datetime
 
