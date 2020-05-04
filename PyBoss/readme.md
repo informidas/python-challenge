@@ -1,7 +1,7 @@
 ![A boss knuckle image](boss.jpg)
 # PyBoss HR Solution
 
-The included script provides a solution to ingest a csv file into a list array structure and process the file to generate cahnges to the structure of the data. <br/><br/>
+The included script provides a solution to ingest a csv file into a list array structure and process the file to generate changes to the structure of the data. <br/><br/>
 
 In summary, the required conversions to the csv input file are as follows: <br/>
 
